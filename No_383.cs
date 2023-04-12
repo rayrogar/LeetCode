@@ -71,7 +71,6 @@ namespace LeetCode
             Console.WriteLine("Input: ransomNote = 'fihjjjjei', magazine = 'hjibagacbhadfaefdjaeaebgi'");
             Console.WriteLine("Output: false");
             Console.WriteLine("Real: " + CanConstruct("fihjjjjei", "hjibagacbhadfaefdjaeaebgi"));
-
             Console.ReadKey();
         }
 
