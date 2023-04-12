@@ -25,7 +25,11 @@ Output: true
 namespace LeetCode
 {
     public class No_941{
-        public bool ValidMountainArray(int[] arr)
+
+        /// <summary>
+        /// 584ms Beats: 5.32%, 48.8MB Beats: 65.40%
+        /// </summary>
+        public bool ValidMountainArray1(int[] arr)
         {
             int length = arr.Length;
             if (length < 3)
@@ -62,6 +66,31 @@ namespace LeetCode
                     return true;
             }
             return false;
+        }
+        /// <summary>
+        /// 128ms Beats: 43.35%, 49MB Beats: 32.32%
+        /// </summary>
+        public bool ValidMountainArray(int[] arr){
+            bool pico = false;
+            for (int i = 0; i < arr.Length - 1; i++)
+            {
+                if (arr[i] == arr[i + 1])
+                    return false;
+                if (!pico)
+                {
+                    if (arr[i] > arr[i + 1])
+                    {
+                        if(i == 0)
+                            return false;
+                        pico = true;
+                    }
+                }
+                else{
+                    if (arr[i] < arr[i + 1])
+                        return false;
+                }
+            }
+            return pico;
         }
     }
 }
