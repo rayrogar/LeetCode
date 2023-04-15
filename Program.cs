@@ -12,7 +12,8 @@ namespace LeetCode
             //No_876 a = new No_876();
             //No_383 a = new No_383();
             //No_71 a = new No_71();
-            No_946 a = new No_946();
+            //No_946 a = new No_946();
+            No_516 a = new No_516();
             //tema_arrays a = new tema_arrays();
 
 
