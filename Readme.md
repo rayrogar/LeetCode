@@ -4,6 +4,7 @@ Progreso en la plataforma
 
 Estado             | Título                                          | % Acierto | Dificultad
 -------------------|-------------------------------------------------|-----------|-----------
+:heavy_check_mark: | 5. Longest Palindromic Substring :dizzy_face:| 32.4%     | Medium
 :heavy_check_mark: | 9. Palindrome Number                            | 53.6%     | Easy
 :heavy_check_mark: | 26. Remove Duplicates from Sorted Array         | 51.6%     | Easy
 :heavy_check_mark: | 27. Remove Element                              | 53.1%     | Easy
@@ -14,10 +15,13 @@ Estado             | Título                                          | % Aciert
 :heavy_check_mark: | 383. Ransom Note                                | 58.3%     | Easy
 :heavy_check_mark: | 412. Fizz Buzz                                  | 70.0%     | Easy
 :heavy_check_mark: | 414. Third Maximum Number                       | 33.2%     | Easy
+:heavy_check_mark: | 448. Find All Numbers Disappeared in an Array   | 60.0%     | Easy
 :heavy_check_mark: | 485. Max Consecutive Ones                       | 56.6%     | Easy
+:heavy_check_mark: | 516. Longest Palindromic Subsequence            | 61.7%     | Medium
 :heavy_check_mark: | 876. Middle of the Linked List                  | 75.7%     | Easy
 :heavy_check_mark: | 905. Sort Array By Parity                       | 75.6%     | Easy
 :heavy_check_mark: | 941. Valid Mountain Array                       | 33.4%     | Easy
+:heavy_check_mark: | 946. Validate Stack Sequences                   | 69.4%     | Medium
 :heavy_check_mark: | 977. Squares of a Sorted Array                  | 71.9%     | Easy
 :heavy_check_mark: | 1051. Height Checker                            | 75.6%     | Easy
 :heavy_check_mark: | 1089. Duplicate Zeros                           | 51.5%     | Easy
