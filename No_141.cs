@@ -44,12 +44,15 @@ namespace LeetCode
     public class No_141
     {
 
+        /// <summary>
+        /// 
+        /// </summary>
         public bool HasCycle(ListNode head)
         {
             if (head == null || head.next == null)
                 return false;
             ListNode s = head, f = head.next;
-            
+
             if (f == s)
                 return true;
                 while (s != null && s.next != null && f.next != null && f.next.next != null)
