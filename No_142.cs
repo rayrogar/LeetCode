@@ -50,6 +50,36 @@ namespace LeetCode
         {
             if (head == null || head.next == null)
                 return null;
+
+            ListNode f = head.next;
+
+            if (head == f)
+                return head;
+
+            Dictionary<ListNode, Boolean> t_hash = new Dictionary<ListNode, bool>();
+
+            t_hash.Add(head, true);
+
+            while (f.next != null && f.next.next != null)
+            {
+                // if (t_hash[f.next]) return f.next;
+                // t_hash.Add(f.next, true);
+                // if(t_hash[f.next.next]) return f.next.next;
+                // f = f.next.next;
+                // t_hash.Add(f, true);
+                // if(t_hash[head.next])
+                // return head.next;
+                // head = head.next;
+                // t_hash.Add(head, true);
+            }
+            return null;
+
+        }
+
+        public ListNode? DetectCycle3(ListNode head)
+        {
+            if (head == null || head.next == null)
+                return null;
             
             ListNode f = head.next;
 
