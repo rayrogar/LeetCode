@@ -180,18 +180,20 @@ namespace LeetCode
             //     Console.WriteLine(String.Join(',', obj.ReturnAsList()));
             //     Console.ReadKey();
 
-                Console.WriteLine("['MyLinkedList','addAtTail','get']" +
-               "\n[[],[1],[0]]");
-                 MyLinkedList obj = new MyLinkedList();
+            //     Console.WriteLine("['MyLinkedList','addAtTail','get']" +
+            //    "\n[[],[1],[0]]");
+            //      MyLinkedList obj = new MyLinkedList();
 
-                Console.WriteLine("obj.AddAtTail(1)");
-                obj.AddAtTail(1);
-                Console.WriteLine(String.Join(',', obj.ReturnAsList()));
-                Console.ReadKey();
+            //     Console.WriteLine("obj.AddAtTail(1)");
+            //     obj.AddAtTail(1);
+            //     Console.WriteLine(String.Join(',', obj.ReturnAsList()));
+            //     Console.ReadKey();
 
-            Console.WriteLine("obj.Get(0): " + obj.Get(0));
-            Console.WriteLine(String.Join(',', obj.ReturnAsList()));
-            Console.ReadKey();
+            // Console.WriteLine("obj.Get(0): " + obj.Get(0));
+            // Console.WriteLine(String.Join(',', obj.ReturnAsList()));
+            // Console.ReadKey();
+
+            No_662 a = new No_662();
 
         }
 

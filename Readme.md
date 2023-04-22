@@ -11,6 +11,8 @@ Estado             | Título                                          | % Aciert
 :heavy_check_mark: | 71. Simplify Path                               | 40.5%     | Medium
 :heavy_check_mark: | 88. Merge Sorted Array                          | 46.7%     | Easy
 :heavy_check_mark: | 125. Valid Palindrome                           | 44.4%     | Easy
+:heavy_check_mark: | 141. Linked List Cycle                          | 47.5%     | Easy
+:heavy_check_mark: | 142. Linked List Cycle II                       | 48.9%     | Medium
 :heavy_check_mark: | 283. Move Zeroes                                | 61.4%     | Easy
 :heavy_check_mark: | 383. Ransom Note                                | 58.3%     | Easy
 :heavy_check_mark: | 412. Fizz Buzz                                  | 70.0%     | Easy
@@ -18,6 +20,8 @@ Estado             | Título                                          | % Aciert
 :heavy_check_mark: | 448. Find All Numbers Disappeared in an Array   | 60.0%     | Easy
 :heavy_check_mark: | 485. Max Consecutive Ones                       | 56.6%     | Easy
 :heavy_check_mark: | 516. Longest Palindromic Subsequence            | 61.7%     | Medium
+:heavy_check_mark: | 662. Maximum Width of Binary Tree               | 42.7%     | Medium
+:heavy_check_mark: | 707. Design Linked List                         | 27.7%     | Medium
 :heavy_check_mark: | 876. Middle of the Linked List                  | 75.7%     | Easy
 :heavy_check_mark: | 905. Sort Array By Parity                       | 75.6%     | Easy
 :heavy_check_mark: | 941. Valid Mountain Array                       | 33.4%     | Easy
