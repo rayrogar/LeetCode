@@ -32,5 +32,30 @@ namespace LeetCode
             }
             return null;
         }
+
+        public ListNode? GetIntersectionNode1(ListNode headA, ListNode headB)
+        {
+            List<ListNode> mem = new List<ListNode>();
+            while (headA != null || headB != null)
+            {
+                if (headA == headB)
+                    return headA;
+                if (mem.Contains(headA))
+                    return headA;
+                else if (headA != null)
+                {
+                    mem.Add(headA);
+                    headA = headA.next;
+                }
+                if (mem.Contains(headB))
+                    return headB;
+                else if (headB != null)
+                {
+                    mem.Add(headB);
+                    headB = headB.next;
+                }
+            }
+            return null;
+        }
     }
 }
