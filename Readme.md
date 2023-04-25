@@ -16,6 +16,7 @@ Estado             | Título                                          | % Aciert
 :heavy_check_mark: | 160. Intersection of Two Linked Lists           | 54.5%     | Easy
 :heavy_check_mark: | 283. Move Zeroes                                | 61.4%     | Easy
 :heavy_check_mark: | 383. Ransom Note                                | 58.3%     | Easy
+:heavy_check_mark: | 387. First Unique Character in a String         | 59.7%     | Easy
 :heavy_check_mark: | 412. Fizz Buzz                                  | 70.0%     | Easy
 :heavy_check_mark: | 414. Third Maximum Number                       | 33.2%     | Easy
 :heavy_check_mark: | 448. Find All Numbers Disappeared in an Array   | 60.0%     | Easy
