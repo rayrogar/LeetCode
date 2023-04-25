@@ -13,6 +13,7 @@ Estado             | Título                                          | % Aciert
 :heavy_check_mark: | 125. Valid Palindrome                           | 44.4%     | Easy
 :heavy_check_mark: | 141. Linked List Cycle                          | 47.5%     | Easy
 :heavy_check_mark: | 142. Linked List Cycle II                       | 48.9%     | Medium
+:heavy_check_mark: | 160. Intersection of Two Linked Lists           | 54.5%     | Easy
 :heavy_check_mark: | 283. Move Zeroes                                | 61.4%     | Easy
 :heavy_check_mark: | 383. Ransom Note                                | 58.3%     | Easy
 :heavy_check_mark: | 412. Fizz Buzz                                  | 70.0%     | Easy
@@ -31,7 +32,9 @@ Estado             | Título                                          | % Aciert
 :heavy_check_mark: | 1089. Duplicate Zeros                           | 51.5%     | Easy
 :heavy_check_mark: | 1295. Find Numbers with Even Number of Digits   | 77.0%     | Easy
 :heavy_check_mark: | 1299. Replace Elements with Greatest Element on | 73.3%     | Easy
+:heavy_check_mark: | 1312. Minimum Insertion Steps to Make a String Palindrome | 69.0%     | Hard
 :heavy_check_mark: | 1342. Number of Steps to Reduce a Number to     | 85.2%     | Easy
 :heavy_check_mark: | 1346. Check If N and Its Double Exist           | 36.6%     | Easy
 :heavy_check_mark: | 1480. Running Sum of 1d Array                   | 87.4%     | Easy
 :heavy_check_mark: | 1672. Richest Customer Wealth                   | 87.9%     | Easy
+:heavy_check_mark: | 2336. Smallest Number in Infinite Set           | 74.5%     | Medium

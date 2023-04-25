@@ -193,7 +193,9 @@ namespace LeetCode
             // Console.WriteLine(String.Join(',', obj.ReturnAsList()));
             // Console.ReadKey();
 
-            No_662 a = new No_662();
+            //No_662 a = new No_662();
+            
+            No_2336 a = new No_2336();
 
         }
 
