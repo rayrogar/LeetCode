@@ -4,7 +4,7 @@ namespace LeetCode
 {
     public class No_19
     {
-        public ListNode RemoveNthFromEnd(ListNode head, int n)
+        public ListNode? RemoveNthFromEnd(ListNode head, int n)
         {
 
             if (head.next == null)
