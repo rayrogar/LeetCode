@@ -194,8 +194,40 @@ namespace LeetCode
             // Console.ReadKey();
 
             //No_662 a = new No_662();
-            
-            No_2336 a = new No_2336();
+            //No_2336 a = new No_2336();
+
+            #region 319. Bulb Switcher
+            // for (int i = 0; i < 150; i++)
+            // {
+            //     int[] mem = new int[i];
+            //     for (int j = 0; j < i; j++)
+            //     {
+            //         for (int k = j; k < i; k += j + 1)
+            //         {
+            //             mem[k] = mem[k] == 0 ? 1 : 0;
+            //         }
+            //         //Console.WriteLine("i: {0}, j: {1}, mem: {2}", i, j, string.Join(string.Empty, mem));
+            //         //Console.ReadKey();
+            //     }
+            //     int c = 0;
+            //     List<int> pos = new List<int>();
+            //     for (int l = 0; l < mem.Length; l++)
+            //     {
+            //         if (mem[l] == 1)
+            //         {
+            //             c++;
+            //             pos.Add(l);
+
+            //         }
+            //     }
+            //     if (i % 2 == 0)
+            //         Console.ForegroundColor = ConsoleColor.Red;
+            //     Console.WriteLine("i: {0}, mem: {1}, cant 1: {2}, pos: {3}", i, string.Join(string.Empty, mem), c, string.Join(',', pos));
+            //     Console.ReadKey();
+            //     Console.ResetColor();
+            // }
+            #endregion
+
 
         }
 

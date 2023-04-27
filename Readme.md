@@ -18,6 +18,7 @@ Estado             | Título                                          | % Aciert
 :heavy_check_mark: | 206. Reverse Linked List                        | 73.7%     | Easy
 :heavy_check_mark: | 258. Add Digits                                 | 65.6%     | Easy
 :heavy_check_mark: | 283. Move Zeroes                                | 61.4%     | Easy
+:heavy_check_mark: | 319. Bulb Switcher                              | 51.2%     | Medium
 :heavy_check_mark: | 383. Ransom Note                                | 58.3%     | Easy
 :heavy_check_mark: | 387. First Unique Character in a String         | 59.7%     | Easy
 :heavy_check_mark: | 412. Fizz Buzz                                  | 70.0%     | Easy
