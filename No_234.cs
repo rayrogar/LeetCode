@@ -11,6 +11,7 @@ namespace LeetCode
                 copy.Add(head.val);
                 head = head.next;
             }
+            
 
             for (int i = 0; i < copy.Count / 2; i++)
             {
