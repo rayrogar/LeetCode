@@ -5,7 +5,7 @@ namespace LeetCode
 {
     public class No_138
     {
-        public Node? CopyRandomList(Node head)
+        public Node? CopyRandomList(Node? head)
         {
             if (head == null)
                 return null;
@@ -50,7 +50,7 @@ namespace LeetCode
                 if (!refer.ContainsKey(head))
                     refer.Add(head, p);
 
-                head = head.next;
+                head = head?.next;
                 p = p.next;
             }
             GC.Collect();
