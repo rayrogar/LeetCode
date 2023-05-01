@@ -228,6 +228,52 @@ namespace LeetCode
             // }
             #endregion
 
+            #region 839. Similar String Groups
+
+            char[] alf = new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z' };
+
+            for (int i = 0; i < 10; i++)
+            {
+                List<int> m = new List<int>();
+
+                Random r = new Random();
+
+                for (int j = 0; j < i + 4; j++)
+                {
+                    m.Add(r.Next(25));
+                }
+                string reg = string.Format("i: {0} ", i);
+
+                for (int j = 0; j < 13 - i; j++)
+                {
+                    reg += "\"";
+                    List<int> n = new List<int>();
+                    for (int k = 0; k < i + 4; k++)
+                    {
+
+                        int rp = r.Next(i + 4 - k - 1);
+                        //Console.WriteLine("i: {0}, k: {1}, n: {2}, rp: {3}, m: {4}", i, k, string.Join(',', n), rp, string.Join(',', m));
+
+                        reg += alf[m[rp]];
+                        n.Add(m[rp]);
+                        m.RemoveAt(rp);
+
+                        //Console.WriteLine(reg);
+                        //Console.ReadKey();
+                    }
+                    reg += "\",";
+                    m = n;
+                }
+
+                Console.WriteLine(reg.TrimEnd(','));
+                Console.ReadKey();
+
+            }
+
+
+            #endregion
+
+
 
         }
 

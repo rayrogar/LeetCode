@@ -4,9 +4,11 @@ Progreso en la plataforma
 
 Estado             | Título                                          | % Acierto | Dificultad
 -------------------|-------------------------------------------------|-----------|-----------
+:heavy_check_mark: | 2. Add Two Numbers                              | 40.5%     | Medium
 :heavy_check_mark: | 5. Longest Palindromic Substring :dizzy_face:| 32.4%     | Medium
 :heavy_check_mark: | 9. Palindrome Number                            | 53.6%     | Easy
 :heavy_check_mark: | 19. Remove Nth Node From End of List            | 41.2%     | Medium
+:heavy_check_mark: | 21. Merge Two Sorted Lists                      | 62.6%     | Easy
 :heavy_check_mark: | 26. Remove Duplicates from Sorted Array         | 51.6%     | Easy
 :heavy_check_mark: | 27. Remove Element                              | 53.1%     | Easy
 :heavy_check_mark: | 71. Simplify Path                               | 40.5%     | Medium
@@ -15,10 +17,13 @@ Estado             | Título                                          | % Aciert
 :heavy_check_mark: | 141. Linked List Cycle                          | 47.5%     | Easy
 :heavy_check_mark: | 142. Linked List Cycle II                       | 48.9%     | Medium
 :heavy_check_mark: | 160. Intersection of Two Linked Lists           | 54.5%     | Easy
+:heavy_check_mark: | 203. Remove Linked List Elements                | 46.2%     | Easy
 :heavy_check_mark: | 206. Reverse Linked List                        | 73.7%     | Easy
+:heavy_check_mark: | 234. Palindrome Linked List                     | 50.3%     | Easy
 :heavy_check_mark: | 258. Add Digits                                 | 65.6%     | Easy
 :heavy_check_mark: | 283. Move Zeroes                                | 61.4%     | Easy
 :heavy_check_mark: | 319. Bulb Switcher                              | 51.2%     | Medium
+:heavy_check_mark: | 328. Odd Even Linked List                       | 61.3%     | Medium
 :heavy_check_mark: | 383. Ransom Note                                | 58.3%     | Easy
 :heavy_check_mark: | 387. First Unique Character in a String         | 59.7%     | Easy
 :heavy_check_mark: | 412. Fizz Buzz                                  | 70.0%     | Easy
