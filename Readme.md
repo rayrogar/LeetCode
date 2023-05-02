@@ -11,9 +11,11 @@ Estado             | Título                                          | % Aciert
 :heavy_check_mark: | 21. Merge Two Sorted Lists                      | 62.6%     | Easy
 :heavy_check_mark: | 26. Remove Duplicates from Sorted Array         | 51.6%     | Easy
 :heavy_check_mark: | 27. Remove Element                              | 53.1%     | Easy
+:heavy_check_mark: | 61. Rotate List                                 | 36.1%     | Medium
 :heavy_check_mark: | 71. Simplify Path                               | 40.5%     | Medium
 :heavy_check_mark: | 88. Merge Sorted Array                          | 46.7%     | Easy
 :heavy_check_mark: | 125. Valid Palindrome                           | 44.4%     | Easy
+:heavy_check_mark: | 138. Copy List with Random Pointer              | 51.5%     | Medium
 :heavy_check_mark: | 141. Linked List Cycle                          | 47.5%     | Easy
 :heavy_check_mark: | 142. Linked List Cycle II                       | 48.9%     | Medium
 :heavy_check_mark: | 160. Intersection of Two Linked Lists           | 54.5%     | Easy
@@ -28,6 +30,7 @@ Estado             | Título                                          | % Aciert
 :heavy_check_mark: | 387. First Unique Character in a String         | 59.7%     | Easy
 :heavy_check_mark: | 412. Fizz Buzz                                  | 70.0%     | Easy
 :heavy_check_mark: | 414. Third Maximum Number                       | 33.2%     | Easy
+:heavy_check_mark: | 430. Flatten a Multilevel Doubly Linked List    | 59.7%     | Medium
 :heavy_check_mark: | 448. Find All Numbers Disappeared in an Array   | 60.0%     | Easy
 :heavy_check_mark: | 485. Max Consecutive Ones                       | 56.6%     | Easy
 :heavy_check_mark: | 516. Longest Palindromic Subsequence            | 61.7%     | Medium
@@ -47,4 +50,6 @@ Estado             | Título                                          | % Aciert
 :heavy_check_mark: | 1346. Check If N and Its Double Exist           | 36.6%     | Easy
 :heavy_check_mark: | 1480. Running Sum of 1d Array                   | 87.4%     | Easy
 :heavy_check_mark: | 1672. Richest Customer Wealth                   | 87.9%     | Easy
+:heavy_check_mark: | 1822. Sign of the Product of an Array           | 65.8%     | Easy
+:heavy_check_mark: | 1491. Average Salary Excluding the Minimum and Maximum Salary| 63.8%     | Easy
 :heavy_check_mark: | 2336. Smallest Number in Infinite Set           | 74.5%     | Medium
