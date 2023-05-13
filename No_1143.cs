@@ -2,6 +2,7 @@ namespace LeetCode
 {
     public class No_1143
     {
+        Dictionary<int[,], int> rec = new Dictionary<int[,], int>();
         public int LongestCommonSubsequence(string text1, string text2)
         {
             int n = text1.Length + 1, m = text2.Length + 1;
@@ -25,25 +26,24 @@ namespace LeetCode
         /// </summary>
         public int LongestCommonSubsequence1(string text1, string text2)
         {
-            Dictionary<int[,], int> rec = new Dictionary<int[,], int>();
-            return LCS(text1, text2, 0, 0, rec);
+            return LCS(text1, text2, 0, 0);
         }
 
-        public int LCS(string text1, string text2, int idxText1, int idxText2, Dictionary<int[,], int> memo)
+        public int LCS(string text1, string text2, int idxText1, int idxText2)
         {
             int[,] k = { { idxText1 }, { idxText2 } };
-            if (memo.ContainsKey(k))
-                return memo[k];
+            if (rec.ContainsKey(k))
+                return rec[k];
             if (idxText1 == text1.Length || idxText2 == text2.Length)
                 return 0;
 
             if (text1[idxText1] == text2[idxText2])
-                memo[k] = 1 + LCS(text1, text2, idxText1 + 1, idxText2 + 1, memo);
+                rec[k] = 1 + LCS(text1, text2, idxText1 + 1, idxText2 + 1);
             else
-                memo[k] = Math.Max(LCS(text1, text2, idxText1 + 1, idxText2, memo), LCS(text1, text2, idxText1, idxText2 + 1, memo));
+                rec[k] = Math.Max(LCS(text1, text2, idxText1 + 1, idxText2), LCS(text1, text2, idxText1, idxText2 + 1));
 
 
-            return memo[k];
+            return rec[k];
         }
     }
 }
