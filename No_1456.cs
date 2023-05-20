@@ -6,11 +6,10 @@ namespace LeetCode
         public int MaxVowels(string s, int k)
         {
             int max = 0;
-
-            var cad = s.ToCharArray();
+            var vowels = "aeiou";
 
             for (int i = 0; i < k; i++)
-                if (cad[i] == 'a' || cad[i] == 'e' || cad[i] == 'i' || cad[i] == 'o' || cad[i] == 'u')
+                if (vowels.Contains(s[i]))
                     max++;
 
             int e = k - 1, m = max;
@@ -18,9 +17,11 @@ namespace LeetCode
             while (e < s.Length - 1)
             {
                 e++;
-                if (cad[e - k] == 'a' || cad[e - k] == 'e' || cad[e - k] == 'i' || cad[e - k] == 'o' || cad[e - k] == 'u')
+
+                if (vowels.Contains(s[e - k]))
                     m--;
-                if (cad[e] == 'a' || cad[e] == 'e' || cad[e] == 'i' || cad[e] == 'o' || cad[e] == 'u')
+
+                if (vowels.Contains(s[e]))
                     m++;
 
                 if (m > max)
