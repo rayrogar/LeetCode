@@ -8,13 +8,8 @@ namespace Name
             string ans = "";
             while (i < word1.Length && i < word2.Length)
                 ans += word1[i].ToString() + word2[i++].ToString();
-
-            int n = word1.Length - word2.Length;
-            if (n > 0)
-                ans += word1.Substring(i);
-            else
-                ans += word2.Substring(i);
-            return ans;
+            
+            return i < word1.Length ? ans + word1.Substring(i) : i < word2.Length ? ans + word2.Substring(i) : ans;
         }
     }
 }
