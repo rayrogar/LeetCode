@@ -1,12 +1,13 @@
 namespace LeetCode
 {
+    using LeetCode1;
     public class No_430
     {
-        public Node? Flatten(Node head)
+        public LeetCode1.Node? Flatten(LeetCode1.Node head)
         {
             if (head == null)
                 return null;
-            Node? ans = head, next = null;
+            LeetCode1.Node? ans = head, next = null;
 
             while (ans != null && (ans.next != null || ans.child != null))
             {
@@ -34,11 +35,17 @@ namespace LeetCode
             return head;
         }
     }
-    public partial class Node
+}
+
+namespace LeetCode1
+{
+
+    public class Node
     {
         public int val;
         public Node? prev;
         public Node? next;
         public Node? child;
     }
+
 }

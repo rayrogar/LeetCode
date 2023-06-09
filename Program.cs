@@ -1,10 +1,13 @@
-﻿using System.Diagnostics.Tracing;
+﻿using System.ComponentModel;
+using System.Diagnostics.Tracing;
+using System.Globalization;
 
 namespace LeetCode
 {
     public class Program{
 
-        public static void Main(string[] args){
+        public static void Main(string[] args)
+        {
             //No_1480 a = new No_1480();
             //No_1672 a = new No_1672();
             //No_412 a = new No_412();
@@ -227,7 +230,6 @@ namespace LeetCode
             //     Console.ResetColor();
             // }
             #endregion
-
             #region 839. Similar String Groups
 
             // char[] alf = new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z' };
@@ -268,18 +270,283 @@ namespace LeetCode
             //     Console.WriteLine(reg.TrimEnd(','));
             //     Console.ReadKey();
 
+            //}
+
+
+            #endregion
+            #region 61. Rotate List
+            //Console.WriteLine(2 % 5);
+            #endregion
+            #region No_724
+
+            // Console.WriteLine("nums = [1,7,3,6,5,6] \n Expected: 3 \n " + string.Join(',', new No_724().PivotIndex(new int[] { 1, 7, 3, 6, 5, 6 })));
+            // Console.WriteLine("nums = [1,2,3] \n Expected: -1 \n " + string.Join(',', new No_724().PivotIndex(new int[] { 1, 2, 3 })));
+            // Console.WriteLine("nums = [2,1,-1] \n Expected: 0 \n " + string.Join(',', new No_724().PivotIndex(new int[] { 2, 1, -1 })));
+            // Console.WriteLine("nums = [-1,1,2] \n Expected: 2 \n " + string.Join(',', new No_724().PivotIndex(new int[] { -1, 1, 2 })));
+            #endregion
+            #region No_649
+
+
+            //for (char c = 'A'; c <= 'Z'; c++)
+            //{
+            //    Console.Write("C:{0}-{1} c: {2} ", c, (int)c,(char)(c+32));
+            // }
+            // Console.WriteLine();
+            // Console.ReadKey();
+            //  for (char c = 'a'; c <= 'z'; c++)
+            //  {
+            //      Console.Write("{0}: {1} ", c, (int)c);
+            //  }
+
+            //No_649 a = new No_649();
+
+            #endregion
+            #region No_1498
+            //int mod = (int)1e9 + 7;
+            const int mod = 1_000_000_007;
+
+            int[] arr = new int[] { 2, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7 };
+
+            // for (int i = 0; i < arr.Length; i++)
+            // {
+            //     Console.WriteLine("Normal: {0} int: {1} mod: {2}", Math.Pow(2, arr[i]), (int)Math.Pow(2, arr[i]), Math.Pow(2, arr[i]) * 2 % mod);
+            // }
+
+            // int[] pow2 = new int[arr.Length];
+            // pow2[0] = 1;
+            // int p = 0;
+            // int m = 0;
+            // for (int i = 1; i < arr.Length; i++)
+            // {
+            //     pow2[i] = (pow2[i - 1] * 2) % mod;
+
+            //     //Console.WriteLine("i: {2}, n: {3}, pow2[i-1]: {0}, (pow2[i - 1] * 2) % mod: {1}, 2^{2}={4},2^{2} % mod={5} ", pow2[i - 1], pow2[i], i, arr.Length, Math.Pow(2, i), (int)(Math.Pow(2, i) % mod));
+            //     Console.WriteLine("(pow2[i - 1] * 2) % mod: {1}, 2^{2}={4},2^{2} % mod={5} ", pow2[i - 1], pow2[i], i, arr.Length, Math.Pow(2, i), (int)(Math.Pow(2, i) % mod));
+            //     p += (pow2[i - 1] + pow2[i]) % mod;
+            //     m += (int)((Math.Pow(2, i - 1) % mod) + (Math.Pow(2, i) % mod)) % mod;
+            //     Console.WriteLine("pow2[i-1] + pow2[i]= {0},(Math.Pow(2, i-1) % mod) + (Math.Pow(2, i) % mod) = {1}", p, m);
+            //     Console.ReadKey();
+
+            // }
+
+            // No_1498 a = new No_1498();
+            // int[] arrr = new int[] { 2, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7, 3, 3, 4, 6, 7 };
+
+            // //Array.Sort(nums);
+            // int modulo = 1000000007;
+
+            // int[] pow2 = new int[arrr.Length];
+            // pow2[0] = 1;
+            // for (int i = 1; i < arrr.Length; i++)
+            // {
+            //     pow2[i] = (pow2[i - 1] * 2) % modulo;
+
+            // }
+
+            // int sum = 0;
+            // int sum1 = 0;
+            // for (int i = 0; i < arrr.Length; i++)
+            // {
+            //     for (int j = arrr.Length - 1; j >= i; j--)
+            //     {
+            //         if (arrr[i] + arrr[j] <= 100)
+            //         {
+
+            //             sum += (sum + pow2[j - i]) % mod;
+
+            //             var doublenumber = Math.Pow(2, (j - i) + 1) / 2;
+
+
+            //             sum1 = (int)(sum1 + (( % mod)) % mod;
+            //             if (sum != sum1)
+            //                 Console.ForegroundColor = ConsoleColor.Red;
+            //             else
+            //                 Console.ForegroundColor = ConsoleColor.Green;
+            //             Console.WriteLine("sum=sum1: {0}={1}", sum, sum1);
+            //             Console.ResetColor();
+            //             Console.ReadKey();
+
+            //             break;
+            //         }
+            //     }
             // }
 
 
+
+            // Console.WriteLine(a.NumSubseq(arrr, 100));
+            // Console.WriteLine(a.NumSubseq1(arrr, 100));
+
+
+
+            #endregion
+            #region No_1
+            // int a = -1000000000;
+            // Console.WriteLine(a+a);
+            #endregion
+            #region No_1964
+            // No_1964 bb = new No_1964();
+            // Console.WriteLine("[1,2,3,2] = {0}", string.Join(',', bb.LongestObstacleCourseAtEachPosition(new int[] { 1, 2, 3, 2 })));
+            // Console.WriteLine("[ 1, 2, 2, 2, 2, 2, 2, 2] = {0}", string.Join(',', bb.LongestObstacleCourseAtEachPosition(new int[] { 1, 2, 2, 2, 2, 2, 2, 2 })));
+            //Console.WriteLine("[2,2,1] = {0}", string.Join(',', bb.LongestObstacleCourseAtEachPosition(new int[] { 2, 2, 1 })));
+
+            #endregion
+            #region No_1572
+            // No_1572 a = new No_1572();
+            // var mat = new int[][] { new int[] { 1, 2, 3 }, new int[] { 4, 5, 6 }, new int[] { 7, 8, 9 } };
+            // Console.WriteLine("new int[] { 1, 2, 3 }, new int[] { 4, 5, 6 }, new int[] { 7, 8, 9 } ");
+            // Console.WriteLine(a.DiagonalSum(mat));
+            // mat = new int[][] { new int[] { 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1 } };
+            // Console.WriteLine("new int[] { 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1 }");
+            // Console.WriteLine(a.DiagonalSum(mat));
+            // mat = new int[][] { new int[] { 1, 1, 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1, 1, 1 } };
+            // Console.WriteLine("new int[] { 1, 1, 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1, 1, 1 } ");
+            // Console.WriteLine(a.DiagonalSum(mat));
+            // mat = new int[][] { new int[] { 1, 1 }, new int[] { 1, 1 } };
+            // Console.WriteLine("new int[] { 1, 1 }, new int[] { 1, 1 }");
+            // Console.WriteLine(a.DiagonalSum(mat));
+            #endregion
+            #region No_54
+            // var mat = new int[][] { new int[] { 1 }, new int[] { 4 }, new int[] { 8 } };
+            // No_54 a = new No_54();
+            // Console.WriteLine(string.Join(',', a.SpiralOrder(mat)));
+            // Console.ReadKey();
+            // mat = new int[][] { new int[] { 1, 2, 3, 4 }, new int[] { 5, 6, 7, 8 }, new int[] { 9, 10, 11, 12 } };
+            // Console.WriteLine(string.Join(',', a.SpiralOrder(mat)));
+            // Console.ReadKey();
+            // mat = new int[][] { new int[] { 1, 2, 3, 4, 5, 6 }, new int[] { 7, 8, 9, 10, 11, 12 }, new int[] { 13, 14, 15, 16, 17, 18 }, new int[] { 19, 20, 21, 22, 23, 24 }, new int[] { 25, 26, 27, 28, 29, 30 }, new int[] { 31, 32, 33, 34, 35, 36 } };
+            // Console.WriteLine(string.Join(',', a.SpiralOrder(mat)));
+            // Console.ReadKey();
+            // mat = new int[][] { new int[] { 7, 8, 9, 10, 11, 12 }, new int[] { 13, 14, 15, 16, 17, 18 }, new int[] { 19, 20, 21, 22, 23, 24 }, new int[] { 25, 26, 27, 28, 29, 30 }, new int[] { 31, 32, 33, 34, 35, 36 } };
+            // Console.WriteLine(string.Join(',', a.SpiralOrder(mat)));
+            // Console.ReadKey();
+            // mat = new int[][] { new int[] { 25, 26, 27, 28, 29, 30 }, new int[] { 31, 32, 33, 34, 35, 36 } };
+            // Console.ReadKey();
+            // Console.WriteLine(string.Join(',', a.SpiralOrder(mat)));
+            // Console.ReadKey();
+            // mat = new int[][] { new int[] { 1, 1 }, new int[] { 1, 2 } };
+            // Console.WriteLine(string.Join(',', a.SpiralOrder(mat)));
+            // Console.ReadKey();
+            // mat = new int[][] { new int[] { 1, 2 }, new int[] { 3, 4 }, new int[] { 5, 6 }, new int[] { 7, 8 }, new int[] { 9, 10 }, new int[] { 11, 12 }, new int[] { 13, 14 }, new int[] { 15, 16 } };
+            // Console.WriteLine(string.Join(',', a.SpiralOrder(mat)));
+            // Console.ReadKey();
+            // mat = new int[][] { new int[] { 1 } };
+            // Console.WriteLine(string.Join(',', a.SpiralOrder(mat)));
+            // Console.ReadKey();
+
+            #endregion
+            #region No_1035
+            // No_1035 aaa = new No_1035();
+            // // Console.WriteLine("nums1: {0}, nums2: {1}", string.Join(',', new int[] { 2, 5, 1, 2, 5 }), string.Join(',', new int[] { 10, 5, 2, 1, 5, 2 }));
+            // // int m = aaa.MaxUncrossedLines(new int[] { 2, 5, 1, 2, 5 }, new int[] { 10, 5, 2, 1, 5, 2 });
+            // // Console.WriteLine("ans: " + m);
+
+            // Console.WriteLine("nums1: {0}, nums2: {1}", string.Join(',', new int[] { 4, 1, 5, 2, 1, 1, 1, 5, 3, 1, 1, 1, 2, 3, 1, 4, 3, 5, 5, 3, 1, 2, 3, 2, 4, 1, 1, 1, 5, 3 }), string.Join(',', new int[] { 3, 1, 4, 1, 1, 3, 5, 1, 2, 2 }));
+            // int m = aaa.MaxUncrossedLines(new int[] { 4, 1, 5, 2, 1, 1, 1, 5, 3, 1, 1, 1, 2, 3, 1, 4, 3, 5, 5, 3, 1, 2, 3, 2, 4, 1, 1, 1, 5, 3 }, new int[] { 3, 1, 4, 1, 1, 3, 5, 1, 2, 2 });
+            // Console.WriteLine("ans: " + m);
+            #endregion
+            #region No_409
+            // string s = "utaliquampurussitametluctusvenenatislectusmagnafringillaurnaporttitorrhoncusdolorpurusnonenimpraesentelementumfacilisisleovelfringillaestullamcorperegetnullafacilisietiamdignissimdiamquisenimlobortisscelerisquefermentumduifaucibusinornarequamviverraorcisagittiseuvolutpatodiofacilisismaurissitametmassavitaetortorcondimentumlaciniaquisvelerosdonecacodiotempororcidapibusultricesiniaculisnuncsedauguelacusviverravitaecongueeuconsequatacfelisdonecetodiopellentesquediamvolutpatcommodosedegestasegestasfringillaphasellusfaucibusscelerisqueeleifenddonecpretiumvulputatesapiennecsagittisaliquammalesuadabibendumarcuvitaeelementumcurabiturvitaenuncsedvelitdignissimsodalesuteusemintegervitaejustoegetmagnafermentumiaculiseunondiamphasellusvestibulumloremsedrisusultriciestristiquenullaaliquetenimtortoratauctorurnanuncidcursusmetusaliquameleifendmiinnullaposueresollicitudinaliquamultricessagittisorciascelerisquepurussemperegetduisattellusaturnacondimentummattispellentesqueidnibhtortoridaliquetlectuspro";
+
+            // No_409 ab = new No_409();
+
+            // int a = ab.LongestPalindrome(s);
+            // Console.WriteLine("ANS: " + a);
+
+            #endregion
+            #region No_733
+
+            // No_733 cc = new No_733();
+            // Console.WriteLine("image: [[1,1,1],[1,1,0],[1,0,1]]");
+
+            // int[][] image = new int[][]{
+            //                 new int[]{1,1,1},
+            //                 new int[]{1,1,0},
+            //                 new int[]{1,0,1}
+            // };
+            // imprimirMatrix(cc.FloodFill(image, 1, 1, 2));
+
+
+
+            #endregion
+            #region No_643
+            // No_643 _no_643 = new No_643();
+            //Console.WriteLine("Respuesta: " + _no_643.FindMaxAverage(testcase, 2));
+
+            #endregion
+            #region No_605
+            // No_605 ab = new No_605();
+            // Console.WriteLine("Input: flowerbed = [1,0,0,0,1], n = 1 " + ab.CanPlaceFlowers(new int[] { 1, 0, 0, 0, 1 }, 1));
+            // Console.WriteLine("Input: flowerbed = [1,0,0,0,1], n = 1 " + ab.CanPlaceFlowers(new int[] { 1, 0, 0, 0, 1 }, 2));
+            #endregion
+            #region No_744
+            // Console.WriteLine("!!!!PAR!!!");
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2 }, 1));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2 }, 2));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 3 }, 2));
+            // Console.ReadKey();
+            // Console.WriteLine("======////======////=====");
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2, 3, 4 }, 1));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2, 3, 4 }, 4));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 3, 3, 4 }, 3));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2, 4, 4 }, 4));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 1, 4, 4 }, 1));
+            // // Console.WriteLine(BinarySearch(new int[] { 1, 1, 4, 4 }, 4));
+            // Console.ReadKey();
+            // Console.WriteLine("======////======////=====");
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2, 3, 4, 5, 6 }, 1));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2, 3, 4, 5, 6 }, 6));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 3, 3, 4, 5, 6 }, 3));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2, 4, 4, 4, 6 }, 4));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 1, 2, 4, 5, 6 }, 2));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 1, 2, 3, 5, 6 }, 3));
+            // Console.ReadKey();
+            // Console.WriteLine("!!!!IMPAR!!!");
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2, 3 }, 1));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2, 3 }, 3));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 3, 4 }, 3));
+            // Console.ReadKey();
+            // Console.WriteLine("======////======////=====");
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2, 3, 4, 5 }, 1));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2, 3, 4, 5 }, 5));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 3, 3, 4, 5 }, 3));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2, 4, 4, 6 }, 4));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 1, 4, 4, 5 }, 4));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 1, 2, 4, 5 }, 2));
+            // Console.ReadKey();
+            // Console.WriteLine("======////======////=====");
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2, 3, 4, 5, 6, 7 }, 1));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2, 3, 4, 5, 6, 7 }, 7));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 3, 3, 4, 5, 6, 7 }, 3));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 2, 4, 4, 4, 5, 7 }, 5));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 1, 2, 4, 5, 6, 7 }, 4));
+            // Console.WriteLine(BinarySearch(new int[] { 1, 1, 2, 3, 5, 6, 7 }, 5));
+            // Console.ReadKey();
+
             #endregion
 
-            #region 61. Rotate List
-            Console.WriteLine(2 % 5);
-            #endregion
 
         }
 
+        // public static int BinarySearch(int[] arr, int target)
+        // {
+        //     Console.WriteLine();
+        //     Console.WriteLine("arr: " + string.Join(',', arr) + " Target: " + target);
+        //     int i = 0, e = arr.Length - 1, m = 0;
+        //     while (i < e)
+        //     {
+        //         m = (i + e) / 2;
+        //         Console.WriteLine("i: {0}, e: {1}, m: {2}", i, e, m);
 
+        //         if (arr[m] == target)
+        //             return m;
+        //         if (arr[m] > target)
+        //             e = m - 1;
+        //         else
+        //             i = m + 1;
+        //     }
+        //     Console.WriteLine("i: {0}, e: {1}, m: {2} end!!!", i, e, m);
+        //     return -1;
+        // }
 
     }
     

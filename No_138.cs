@@ -24,7 +24,8 @@ namespace LeetCode
                     else
                     {
                         p.next = new Node(head.next.val);
-                        refer.Add(head.next, p.next);
+                        //refer.Add(head.next, p.next);
+                        refer[head.next] = p.next;
                     }
                 }
                 else
@@ -35,7 +36,8 @@ namespace LeetCode
                     if (!refer.ContainsKey(head.random))
                     {
                         p.random = new Node(head.random.val);
-                        refer.Add(head.random, p.random);
+                        //refer.Add(head.random, p.random);
+                        refer[head.random] = p.random;
                     }
                     else p.random = refer[head.random];
                 }
@@ -48,7 +50,8 @@ namespace LeetCode
 
                 }
                 if (!refer.ContainsKey(head))
-                    refer.Add(head, p);
+                    //refer.Add(head, p);
+                    refer[head] = p;
 
                 head = head?.next;
                 p = p.next;
