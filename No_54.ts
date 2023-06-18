@@ -36,7 +36,6 @@ namespace Leetcode{
     
                 left++;
             }
-    
             return ans;
         };
     }
