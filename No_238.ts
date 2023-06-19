@@ -2,16 +2,16 @@ namespace Leetcode{
     export class No_238 {
 
         productExceptSelf1(nums: number[]): number[] {
-            let ans: number[] = [];
-            let aux: number[] = [];
+          const ans = Array(nums.length);
+            const aux = Array(nums.length);
             ans.fill(1, 0, nums.length);
             aux.fill(1, 0, nums.length);
-        return ans;
+        
             for (let i = 1; i < nums.length; i++) {
                 ans[i] = ans[i - 1] * nums[i - 1];
                 aux[nums.length - 1 - i] *= aux[nums.length - i] * nums[nums.length - i];
             }
-            return ans;
+          
             
             for (let i = 0; i < ans.length; i++)
                 ans[i] *= aux[i];
