@@ -19,5 +19,12 @@ namespace Leetcode {
                 }
             };
         };
+
+        expect2(val: any): ToBeOrNotToBe{
+            return {
+                toBe: (newVal) => (newVal === val) ? true : (() => { throw new Error("Not Equal"); })(),
+                notToBe: (newVal) => (newVal !== val) ? true : (() => { throw new Error("Equal"); })()
+            };
+        };
     }
 }
