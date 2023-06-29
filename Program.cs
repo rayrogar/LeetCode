@@ -538,7 +538,7 @@ namespace LeetCode
             // Console.ReadKey();
             // Console.WriteLine(_no1802.Sum(4, 3, 4));
             // Console.ReadKey();
-            
+
             // Console.WriteLine(_no1802.Sum(10, 0, 3));
             // Console.ReadKey();
             // Console.WriteLine(_no1802.Sum(17, 0, 3));
@@ -556,34 +556,40 @@ namespace LeetCode
             // Console.WriteLine(_no1802.Sum(35, 0, 3));
             // Console.ReadKey();
 
-            Console.WriteLine(_no1802.Sum(5, 0, 5));
-            Console.ReadKey();
-            Console.WriteLine(_no1802.Sum(6, 5, 6));
-            Console.ReadKey();
-            Console.WriteLine(_no1802.Sum(3, 0, 5));
-            Console.ReadKey();
-            Console.WriteLine(_no1802.Sum(2, 4, 5));
-            Console.ReadKey();
-            Console.WriteLine(_no1802.Sum(4, 3, 6));
-            Console.ReadKey();
-            Console.WriteLine(_no1802.Sum(3, 3, 5));
-            Console.ReadKey();
-            Console.WriteLine(_no1802.Sum(8, 3, 6));
-            Console.ReadKey();
-            Console.WriteLine(_no1802.Sum(7, 3, 5));
-            Console.ReadKey();
-            Console.WriteLine(_no1802.Sum(12, 2, 8));
-            Console.ReadKey();
-            Console.WriteLine(_no1802.Sum(11, 6, 8));
-            Console.ReadKey();
-            Console.WriteLine(_no1802.Sum(10, 3, 9));
-            Console.ReadKey();
-            Console.WriteLine(_no1802.Sum(11, 7, 9));
-            Console.ReadKey();
+            // Console.WriteLine(_no1802.Sum(5, 0, 5));
+            // Console.ReadKey();
+            // Console.WriteLine(_no1802.Sum(6, 5, 6));
+            // Console.ReadKey();
+            // Console.WriteLine(_no1802.Sum(3, 0, 5));
+            // Console.ReadKey();
+            // Console.WriteLine(_no1802.Sum(2, 4, 5));
+            // Console.ReadKey();
+            // Console.WriteLine(_no1802.Sum(4, 3, 6));
+            // Console.ReadKey();
+            // Console.WriteLine(_no1802.Sum(3, 3, 5));
+            // Console.ReadKey();
+            // Console.WriteLine(_no1802.Sum(8, 3, 6));
+            // Console.ReadKey();
+            // Console.WriteLine(_no1802.Sum(7, 3, 5));
+            // Console.ReadKey();
+            // Console.WriteLine(_no1802.Sum(12, 2, 8));
+            // Console.ReadKey();
+            // Console.WriteLine(_no1802.Sum(11, 6, 8));
+            // Console.ReadKey();
+            // Console.WriteLine(_no1802.Sum(10, 3, 9));
+            // Console.ReadKey();
+            // Console.WriteLine(_no1802.Sum(11, 7, 9));
+            // Console.ReadKey();
 
 
             #endregion
 
+            // for (int i = 0; i < 10;i++)
+            // Console.WriteLine(new string('+', 10));
+            Console.WriteLine((" I Love you").Replace(" ", "").Length);
+            Console.WriteLine((" ILove you").Replace(" ", "").Length);
+            Console.WriteLine((" ILoveyou").Replace(" ", "").Length);
+            Console.WriteLine(("ILoveyou").Replace(" ", "").Length);
         }
 
         // public static int BinarySearch(int[] arr, int target)
@@ -606,6 +612,7 @@ namespace LeetCode
         //     Console.WriteLine("i: {0}, e: {1}, m: {2} end!!!", i, e, m);
         //     return -1;
         // }
+
 
     }
     

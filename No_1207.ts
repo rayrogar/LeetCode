@@ -4,7 +4,7 @@ namespace Leetcode{
             let map = new Map<number, number>();
 
             arr.forEach(x => { if (!map.has(x)) map.set(x, 1); else map.set(x, map.get(x) + 1); });
-            let sortedArray = [];
+            let sortedArray:number[] = [];
             for (const x of map.values())
                 sortedArray.push(x);
             sortedArray.sort();
