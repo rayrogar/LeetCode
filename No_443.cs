@@ -4,19 +4,15 @@ namespace LeetCode
     {
         public int Compress(char[] chars)
         {
-            string cad = string.Join("", chars);
             int p = 0, l = 0, t = 0, c = 0;
 
-            while (t < cad.Length)
+            while (t < chars.Length)
             {
-                if (p < cad.Length && cad[p] == cad[t])
-                {
-                    c++;
-                    p++;
-                }
+                if (p < chars.Length && chars[p] == chars[t])
+                { c++; p++; }
                 else
                 {
-                    chars[l] = cad[t];
+                    chars[l] = chars[t];
                     l++;
                     if (c > 1)
                     {
@@ -26,6 +22,7 @@ namespace LeetCode
                     c = 0;
                     t = p;
                 }
+
             }
             return l;
         }
