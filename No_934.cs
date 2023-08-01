@@ -27,9 +27,6 @@ namespace LeetCode
 
                     while (o > c)
                     {
-                        //if(s[j] != '[' && s[j] != ']')
-                        //  rep += s[j].ToString();
-                        //else 
                         if (s[j] == '[')
                             o++;
                         else if (s[j] == ']')
