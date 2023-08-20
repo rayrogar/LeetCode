@@ -1,6 +1,8 @@
 ﻿using System.ComponentModel;
 using System.Diagnostics.Tracing;
 using System.Globalization;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using Name;
 
 namespace LeetCode
@@ -583,13 +585,115 @@ namespace LeetCode
 
 
             #endregion
+            #region No_934
+            //Console.WriteLine("3[a]1[b] => " +new No_934().DecodeString("3[a]1[b]"));
+            //Console.WriteLine("3[a]1b]] => " +new No_934().DecodeString("3[a1[b]]"));
+            //Console.WriteLine("3[a]b1[5[c]]1[d] => " +new No_934().DecodeString("3[a]b1[5[c]]1[d]"));
+            #endregion
+            #region No_399
+            //No_399 _399 = new No_399();
+
+            // Console.WriteLine(string.Join(",", _399.CalcEquation(new List<List<string>> { new List<string> { "x1", "x2" }
+            //                                                     , new List<string> { "x2", "x3" }
+            //                                                     , new List<string> { "x3", "x4" }
+            //                                                     , new List<string> { "x4", "x5" }
+            //                                                     }.ToArray()
+            //                                     , new double[] { 3.0, 4.0, 5.0, 6.0 }
+            //                                     , new List<List<string>> { new List<string> { "x1", "x5" }
+            //                                                              , new List<string> { "x5", "x2" }
+            //                                                              , new List<string> { "x2", "x4" }
+            //                                                              , new List<string> { "x2", "x2" }
+            //                                                              , new List<string> { "x2", "x9" }
+            //                                                      }.ToArray())));
+            // Console.WriteLine(string.Join(",", _399.CalcEquation(new List<List<string>> { new List<string> { "a", "b" }, new List<string> { "b", "c" } }.ToArray()
+            //                                     , new double[] { 2.0, 3.0 }
+            //                                     , new List<List<string>> { new List<string> { "a", "c" },new List<string> { "b", "a" }
+            //                                     ,new List<string> { "a", "e" },new List<string> { "a", "a" },new List<string> { "x", "x" } }.ToArray())));
+
+            // Console.WriteLine(string.Join(",", _399.CalcEquation(new List<List<string>> { new List<string> { "a", "b" }, new List<string> { "b", "c" } }.ToArray()
+            //                                     , new double[] { 2.0, 3.0 }
+            //                                     , new List<List<string>> { new List<string> { "b", "a" } }.ToArray())));
+            #endregion
+            #region No_1926
+
+            //No_1926 _1926 = new No_1926();
+
+            //test case 1
+            // char[][] maze = {new char[]{'+','.','+','+','+'}
+            //                 ,new char[]{'+','.','.','.','+'}
+            //                 ,new char[]{'+','.','.','.','+'}
+            //                 ,new char[]{'+','+','+','.','+'}};
+
+            //test case 2
+            //  char[][] maze = {new char[]{'+','.','+','+','+'}
+            //                 ,new char[]{'+','.','.','.','+'}
+            //                 ,new char[]{'.','.','.','.','+'}
+            //                 ,new char[]{'+','+','+','+','+'}};
+
+            // char[][] maze = new char[100][];
+
+            // for (int i = 0; i < 100; i++){
+            //     maze[i] = new char[100];
+            //     for (int j = 0; j < 100; j++)
+            //         maze[i][j] = '.';
+            // }
+            //     // Console.WriteLine($"Leetcode challenge No: 1926 \n TestCase: \n{string.Join("\n", maze.Select(x =>
+            //     // {
+            //     //     return string.Join(" ", x);
+            //     // }))}");
+
+            // Console.WriteLine($"Entrando en [50 , 50], Answer: {_1926.NearestExit(maze, new int[] { 50, 50 })}");
+            // Console.ReadKey();
+            // Console.WriteLine($"Entrando en [50 , 50], Answer: {_1926.NearestExit1(maze, new int[] { 50, 50 })}");
+            
+
+            //  List<int[]> a = new List<int[]>() { new int[] { 1, 2 }, new int[] { 3, 4 } };
+            //  int[] b = { 1, 2 };
+            //  int[] c = { 5, 6 };
+            // Console.WriteLine($"a.Find(b): {a.Find(x => x[0] == b[0] && x[1] == b[1]) == null} A.Find(c): {a.Find(x => x[0] == c[0] && x[1] == c[1]) == null}");
+            // Console.WriteLine($"a.Find(b): {a.First(x => x[0] == b[0] && x[1] == b[1]) == null} A.Find(c): {a.First(x => x[0] == c[0] && x[1] == c[1]) == null}");
+
+            // Queue<int[]> z = new Queue<int[]>();
+            //  z.Enqueue(new int[] { 9, 8 });
+
+            // Console.WriteLine($"Queue contains [9,8] {z.Contains(new int[] { 9, 8 })} contains [7,8] {z.Contains(new int[] { 7, 8 })} ");
+            #endregion
+
+
+            #region Otros
+
+            // int[] nums ={3,2,4};
+            // int[] Indexs = new int[nums.Length];
+            // for (int i = 0; i < Indexs.Length; i++)
+            //     Indexs[i] = i;
+            // Console.WriteLine($"{string.Join(",", nums)} => {string.Join(",", Indexs)}");
+            // Array.Sort(nums, Indexs);
+            // Console.WriteLine($"{string.Join(",", nums)} => {string.Join(",", Indexs)}");
 
             // for (int i = 0; i < 10;i++)
             // Console.WriteLine(new string('+', 10));
-            Console.WriteLine((" I Love you").Replace(" ", "").Length);
-            Console.WriteLine((" ILove you").Replace(" ", "").Length);
-            Console.WriteLine((" ILoveyou").Replace(" ", "").Length);
-            Console.WriteLine(("ILoveyou").Replace(" ", "").Length);
+            // Console.WriteLine((" I Love you").Replace(" ", "").Length);
+            // Console.WriteLine((" ILove you").Replace(" ", "").Length);
+            // Console.WriteLine((" ILoveyou").Replace(" ", "").Length);
+            // Console.WriteLine(("ILoveyou").Replace(" ", "").Length);
+
+            // List<int[]> a = new List<int[]>() { new int[] { 1, 2 }, new int[] { 3, 4 } };
+            // int[] b = { 1, 2 };
+            // int[] c = { 5, 6 };
+            // Console.WriteLine(a.Contains(b));
+            // Console.WriteLine(a.Select(x => x[0] == b[0] && x[1] == b[1]).Count()!=0);
+            // Console.WriteLine(a.Count(x => x[0] == b[0] && x[1] == b[1]));
+            // Console.WriteLine(a.Count(x => x[0] == c[0] && x[1] == c[1]));
+            // Queue<int[]> z = new Queue<int[]>();
+            // z.Enqueue(new int[] { 9, 8 });
+            // while(z.Count(x=>x[0]==9 && x[1]==8)!=0){
+            //     Console.WriteLine(string.Join(",", z.Dequeue()));
+            //     //z.Enqueue(new int[] { 9, 5 });
+            // }
+            // Console.ReadKey();
+
+            #endregion
+
         }
 
         // public static int BinarySearch(int[] arr, int target)
