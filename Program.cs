@@ -616,6 +616,8 @@ namespace LeetCode
             #endregion
             #region No_1926
 
+
+
             //No_1926 _1926 = new No_1926();
 
             //test case 1
@@ -645,7 +647,7 @@ namespace LeetCode
             // Console.WriteLine($"Entrando en [50 , 50], Answer: {_1926.NearestExit(maze, new int[] { 50, 50 })}");
             // Console.ReadKey();
             // Console.WriteLine($"Entrando en [50 , 50], Answer: {_1926.NearestExit1(maze, new int[] { 50, 50 })}");
-            
+
 
             //  List<int[]> a = new List<int[]>() { new int[] { 1, 2 }, new int[] { 3, 4 } };
             //  int[] b = { 1, 2 };
@@ -658,9 +660,82 @@ namespace LeetCode
 
             // Console.WriteLine($"Queue contains [9,8] {z.Contains(new int[] { 9, 8 })} contains [7,8] {z.Contains(new int[] { 7, 8 })} ");
             #endregion
+            #region No_957
+            //No_957 _957 = new No_957();
+            //Console.WriteLine(string.Join(",",_957.PrisonAfterNDays(new int[] { 1,1,0,1,1,0,0,1}, 14)));
+            #endregion
+            #region No_2542
+
+            No_2542 _2542 = new No_2542();
+            Console.WriteLine($"Test case : nums1: [2,1,14,12] nums2: [11,7,13,6]=> {_2542.MaxScore(new int[] { 2,1,14,12}, new int[] { 11,7,13,6 }, 3)} Expected : 168");
+            //Console.WriteLine($"Test case : nums1: [4,2,3,1,1] nums2: [7,5,10,9,6]=> {_2542.MaxScore(new int[] { 4, 2, 3, 1, 1 }, new int[] { 7, 5, 10, 9, 6 }, 1)} Expected : 30");
+            //Console.WriteLine($"Test case : nums1: [1,3,3,2] nums2: [2,1,3,4]=> {_2542.MaxScore(new int[] { 1,3,3,2}, new int[] { 2,1,3,4 }, 3)} Expected : 12");
+            
+            #endregion
 
 
             #region Otros
+
+            //  int[] arr1 = { 3, 1, 4 };
+            // Array.Sort(arr1, Comparer<int>.Create((x, y) => x.CompareTo(y) * -1));
+            // Console.Write($"{string.Join(",", arr1)}");
+            // Array.Sort(arr1);
+            // Console.WriteLine($"=>{string.Join(",", arr1)}");
+            // int[] arr2 = { 2, 5, 6 };
+
+            // Console.WriteLine(string.Join(",", arr1) + " " + string.Join(",", arr2));
+
+            // Array.Sort(arr1, arr2, Comparer<int>.Create((x, y) => x.CompareTo(y)));
+
+            // Console.WriteLine(string.Join(",", arr1) + " " + string.Join(",", arr2));
+
+
+            // arr1 = new int[] { 3, 1, 1 };
+            // arr2 = new int[] { 2, 6, 5 };
+            // Console.WriteLine(string.Join(",", arr1) + " " + string.Join(",", arr2));
+           
+            // Array.Sort(arr1, arr2, Comparer<int>.Create((x, y) =>
+            // {
+            //     Console.Write($"x: {x}, y: {y}");
+            //     int idx = Array.IndexOf(arr1, x), idy = Array.IndexOf(arr1, y);
+            //     int result = x.CompareTo(y);
+            //     Console.Write($" R\\{result}");
+            //     if (result == 0)
+            //     {
+                    
+            //         Console.Write($" => {idx}: arr2[idx]: {arr2[idx]}, {idy}: arr2[idy]: {arr2[idy]}");
+            //         result = arr2[idx].CompareTo(arr2[idy]);
+            //         Console.Write($" R\\{result}");
+            //     }
+            //     Console.WriteLine();
+            //     return result;
+            // }));
+
+            // Console.WriteLine(string.Join(",", arr1) + " " + string.Join(",", arr2));
+
+            // PriorityQueue<int, int> p= new PriorityQueue<int, int>(10);
+
+            // for (int i = 0; i < 10; i++)
+            //     p.Enqueue(i, 10-i);
+            // Console.WriteLine(string.Join(",", p.UnorderedItems));
+            // Console.ReadKey();
+
+            // while (p.Count != 0)
+            //     Console.WriteLine($" {p.Dequeue()} => {(p.Count !=0 ? p.Peek():null)}");
+            // Console.ReadKey();
+
+
+            
+            // int[] testcase =  { 1, 3, 3, 3, 5, 8 };
+
+            // Console.WriteLine($"Array: {string.Join(",", testcase)}");
+            // //Console.WriteLine($"Insert 2 => {string.Join(",", BinaryInsertion(testcase.ToList(), 2))}");
+            // //Console.WriteLine($"Insert 3 => {string.Join(",", BinaryInsertion(testcase.ToList(), 3))}");
+            // Console.WriteLine($"Insert 9 => {string.Join(",", BinaryInsertion(testcase.ToList(), 9))}");
+            // Console.WriteLine($"Insert 0 => {string.Join(",", BinaryInsertion(testcase.ToList(), 0))}");
+
+
+
 
             // int[] nums ={3,2,4};
             // int[] Indexs = new int[nums.Length];
@@ -695,6 +770,21 @@ namespace LeetCode
             #endregion
 
         }
+
+        // public static int[] BinaryInsertion(List<int> arr, int value)
+        // {
+        //      int i = 0, e = arr.Count - 1;
+        // while(i < e){
+        //     int m = (i + e)/2;
+        //     if(arr[m] >= value)
+        //         e = m - 1;
+        //     else
+        //         i = m + 1; 
+        // } 
+
+        // arr[i] = value;
+        //     return arr.ToArray();
+        // }
 
         // public static int BinarySearch(int[] arr, int target)
         // {
