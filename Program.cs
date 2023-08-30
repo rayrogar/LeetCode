@@ -7,6 +7,7 @@ using Name;
 
 namespace LeetCode
 {
+    #pragma warning disable
     public class Program{
 
         public static void Main(string[] args)
@@ -666,15 +667,115 @@ namespace LeetCode
             #endregion
             #region No_2542
 
-            No_2542 _2542 = new No_2542();
-            Console.WriteLine($"Test case : nums1: [2,1,14,12] nums2: [11,7,13,6]=> {_2542.MaxScore(new int[] { 2,1,14,12}, new int[] { 11,7,13,6 }, 3)} Expected : 168");
+            //No_2542 _2542 = new No_2542();
+            //Console.WriteLine($"Test case : nums1: [2,1,14,12] nums2: [11,7,13,6]=> {_2542.MaxScore(new int[] { 2,1,14,12}, new int[] { 11,7,13,6 }, 3)} Expected : 168");
             //Console.WriteLine($"Test case : nums1: [4,2,3,1,1] nums2: [7,5,10,9,6]=> {_2542.MaxScore(new int[] { 4, 2, 3, 1, 1 }, new int[] { 7, 5, 10, 9, 6 }, 1)} Expected : 30");
             //Console.WriteLine($"Test case : nums1: [1,3,3,2] nums2: [2,1,3,4]=> {_2542.MaxScore(new int[] { 1,3,3,2}, new int[] { 2,1,3,4 }, 3)} Expected : 12");
-            
+
+            #endregion
+            #region No_944
+
+            // No_994 _994 = new No_994();
+            // List<int[][]> testCases = new List<int[][]>{
+            //     //TestCase 0
+            //     new int[][]{new int[]{0}},
+            //     //TestCase 1
+            //     new int[][]{new int[]{1}},
+            //     //TestCase 2
+            //     new int[][]{new int[]{2}},
+            //     //TestCase3x3Isla
+            //     new int[][] { new int[] { 2, 1, 1 }, new int[] { 1, 1, 0 }, new int[] { 0, 0, 1 } },
+            //     //TestCase3x3ceros 
+            //     new int[][]{ new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 }, new int[] { 0, 0, 0 } },
+            //     //TestCase3x3unos 
+            //     new int[][]{ new int[] { 1, 1, 1 }, new int[] { 1, 1, 1 }, new int[] { 1, 1, 1 } },
+            //     //TestCase3x3dos 
+            //     new int[][]{ new int[] { 2, 2, 2 }, new int[] { 2, 2, 2 }, new int[] { 2, 2, 2 } },
+            //     //TestCase3x3OK 
+            //     new int[][]{ new int[] { 1, 1, 1 }, new int[] { 1, 2, 1 }, new int[] { 1, 1, 1 } },
+            //     //TestMultipleRott 
+            //     new int[][]{new int[]{2,1,0,1,2},new int[]{1,0,0,0,1},new int[]{0,0,0,0,0},new int[]{1,0,0,0,1},new int[]{2,1,0,1,2}},
+            //     //TestCaseWrongAnswer
+            //     new int[][]{new int[]{2,2},new int[]{1,1},new int[]{0,0},new int[]{2,0}}};
+
+            // foreach (var test in testCases)
+            // {
+
+            //     Console.WriteLine($"Test Case: \n{string.Join("\n", test.Select(x => string.Join(",", x)))}");
+            //     Console.WriteLine($"Ans: {_994.OrangesRotting(test)}");
+            //     //Console.ReadKey();
+            // }
+
+            #endregion
+            #region No_2462
+            // List<((int[], int), int)> testCases = new List<((int[], int), int)>{
+            //     ((new int[]{211,169,4359,2335,3956,658,1371,1516,4637,2588,4166,250,4866,3122,1197,61,292,1616,4857,4067,1428,4912,3071,3108,2221,1932,4183,4101,727,
+            //                 2715,64,357,1186,2444,3766,3978,1962,1648,871,2961,1164,4792,1528,2064,2653,179,2780,3732,2881,1165,623,362,2371,1353,4219,4438,3765,4567,
+            //                 1372,4669,1496,3353,4147,33,4378,4634,1331,3014,3723,3271,433,1065,2345,4445,4077,2708,1303,2666,3311,1546,3078,4467,1683,414,4282,3510,478,
+            //                 2858,4805,1113,783,3999,2685,1025,3111,2394,2985,2693,1068,1806,690,4867,4178,1726,1680,1860,155,96,1500,4250,286,4145,771,1728,2677,353,
+            //                 1163,4876,2066,3910,2578,1298,3321,3236,1152,3140,2294,2200,69,3027,3675,3594,74,3575,2279,4874,1071,3085,1786,4596,1584,42,411,3962,2704,
+            //                 4411,1926,1300,4533,2119,3924,1034,128,911,4717,4767,1669,3669,2936,2099,3395,2487,2539,4722,122,642,4680,4813,708,4938,4156,1152,2789,699,
+            //                 4724,4159,1766,2662,492,2612,330,2010,458,161,794,2062,4281,717,3486,3331,474,4734,1869,4817,2796,1511,146,3857,3471,3674,45,519,3035,3830,
+            //                 4566,957,4705,3194,1524,2668,903,2833,2118,929,266,1177,3297,1681,400,2635,1962,1682,2116,603,1521},222),2),
+
+            //      ((new int[]{17,12,10,2,7,2,11,20,8},3),4),
+
+            //     ((new int[]{1,2,4,1},3),3),
+
+            //     ((new int[]{31,25,72,79,74,65,84,91,18,59,27,9,81,33,17,58}
+            //                                                         ,11),2) };
+            // No_2462 _2462 = new No_2462();
+            // foreach (var test in testCases)
+            // {
+            //     Console.WriteLine($"Test Case: {string.Join(",", test.Item1.Item1)}, "
+            //     +$"K = {test.Item1.Item2}, C = {test.Item2},"
+            //     +$" Ans: {_2462.TotalCost(test.Item1.Item1, test.Item1.Item2, test.Item2)}");
+            // }
+            #endregion
+            #region No_2300
+
+            // List<(int[], (int[], int))> TestCases = new List<(int[], (int[], int))>{
+            //     (new int[]{5,1,3},(new int[]{1,2,3,4,5},7)),
+            //     (new int[]{3,1,2},(new int[]{8,5,8},16))
+            // };
+
+            // for (int i = 0; i < TestCases.Count; i++)
+            // {
+            //     Console.WriteLine($"spells: {string.Join(",", TestCases[i].Item1)},"
+            //     + $" potions: {string.Join(",", TestCases[i].Item2.Item1)}"
+            //     + $" Success: {TestCases[i].Item2.Item2}");
+            //     Console.WriteLine($"Output: {string.Join(",", new No_2300().SuccessfulPairs(TestCases[i].Item1
+            //                                                                                 , TestCases[i].Item2.Item1,
+            //                                                                                 TestCases[i].Item2.Item2))}");
+            //}
+            #endregion
+            #region No_162
+            //     List<int[]> TestCases = new List<int[]>{new int[]{1,2,1,3,5,6,4},new int[]{2,1,3,1},
+            //                                         new int[]{1,2,3,4,5},new int[]{5,4,3,2,1},
+            //                                         new int[]{5,4,3,2,3,4,5}};
+
+            // for (int i = 0; i < TestCases.Count; i++)
+            // {
+            //     Console.WriteLine($"Test Case : {string.Join(",", TestCases[i])}");
+            //     Console.WriteLine($"Output: {new No_162().FindPeakElement(TestCases[i])}");
+            // }
+            #endregion
+            #region No_875
+                List<(int[],int)> TestCases = new List<(int[],int)>{(new int[]{873375536,395271806,617254718,970525912,634754347,824202576,694181619,20191396,886462834,442389139,572655464,438946009,791566709,776244944,694340852,419438893,784015530,588954527,282060288,269101141,499386849,846936808,92389214,385055341,56742915,803341674,837907634,728867715,20958651,167651719,345626668,701905050,932332403,572486583,603363649,967330688,484233747,859566856,446838995,375409782,220949961,72860128,998899684,615754807,383344277,36322529,154308670,335291837,927055440,28020467,558059248,999492426,991026255,30205761,884639109,61689648,742973721,395173120,38459914,705636911,30019578,968014413,126489328,738983100,793184186,871576545,768870427,955396670,328003949,786890382,450361695,994581348,158169007,309034664,388541713,142633427,390169457,161995664,906356894,379954831,448138536},943223529),
+                                                        (new int[]{3,6,7,11},8),(new int[]{30,11,23,4,20},5),(new int[]{30,11,23,4,20},6)};
+
+            foreach (var testData in TestCases)
+            {
+                Console.WriteLine($"Test case: {string.Join(",", testData.Item1)} h: {testData.Item2}");
+                Console.WriteLine($"Output: {new No_875().MinEatingSpeed(testData.Item1, testData.Item2)}");
+            }
             #endregion
 
 
             #region Otros
+
+           // var test = new List<(int, int)> { (0, 0), (0, 1), (1, 0), (1, 1) };
+           // Console.WriteLine($"Find (0,0): R/{test.IndexOf((0, 0))}, find (1,1) R/{test.IndexOf((1, 1))} find (2,2) R/{test.IndexOf((2, 2))}");
 
             //  int[] arr1 = { 3, 1, 4 };
             // Array.Sort(arr1, Comparer<int>.Create((x, y) => x.CompareTo(y) * -1));
