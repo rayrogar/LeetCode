@@ -1,5 +1,6 @@
 namespace LeetCode
 {
+    #pragma warning disable
     public class No_703
     {
         //List<int> arr = new List<int>();
@@ -23,6 +24,40 @@ namespace LeetCode
         {
             arr.EnqueueDequeue(val, val);
             return arr.Peek();
+        }
+    }
+
+/// <summary>
+/// Second Implementation a few mounth later
+/// Runtime: 123ms Beats: 97.28%, Memory: 60.9mb Beats: 15.76%
+/// </summary>
+    public class KthLargest
+    {
+        PriorityQueue<int, int> arr;
+        int Kcount = 0;
+
+        public KthLargest(int k, int[] nums)
+        {
+            arr = new PriorityQueue<int, int>();
+            Kcount = k;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (i < k)
+                    arr.Enqueue(nums[i], nums[i]);
+                else
+                    arr.EnqueueDequeue(nums[i], nums[i]);
+            }
+        }
+
+        public int Add(int val)
+        {
+            if (arr.Count < Kcount)
+                arr.Enqueue(val, val);
+            else
+                arr.EnqueueDequeue(val, val);
+            return arr.Peek();
+
         }
     }
 }
